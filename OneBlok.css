@@ -1,0 +1,108 @@
+.parent {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+}
+.oneblok{
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+.child {
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+}
+.child-active {
+  flex-shrink: 1;
+}
+a.child-link {
+    display: block;   /* или inline-block, если нужно */
+    text-decoration: none; /* убрать подчёркивание */
+}
+
+h1{
+    font-size: 50px;
+    color: black;
+}
+.robot{
+    font-size: 30px;
+  color: #f5f5f5;
+  font-family: 'Playfair Display', sans-serif;
+} 
+
+.electronOne{
+    font-size: 30px;
+  color: #f5f5f5;
+  font-family: 'Playfair Display', sans-serif;
+}
+.dron{
+ font-size: 30px;
+  color: #f5f5f5;
+  font-family: 'Playfair Display', sans-serif;
+ 
+}
+
+.blok{ 
+    height: 600px;
+    background-color: cadetblue;
+    padding: 10px;
+    padding-bottom:0px;
+    border-radius: 20px;
+    border: 2px solid rgb(5, 5, 5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.blok:hover
+{
+   transform: scale(1.1);
+   box-shadow: 0 0 15px 5px #070707;
+}
+.loader{
+            width: 100%;
+            background: #fff;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+            padding: 5px;
+}
+.article{
+ padding-top: 20px;
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+ .blok{
+        height: auto;               
+ }
+}
+@media (max-width: 768px) {
+.child {
+  margin: 0px;
+   padding: 10px;
+}
+}
+@media (max-width: 426px) {
+.oneblok{
+  text-align: left;
+}
+.parent {
+   display: block; 
+   margin-bottom: 20px;
+}
+a.child-link {
+    display: inline;
+}
+.blok{ 
+    height: 200px;
+}
+.robot{
+    font-size: 20px;
+} 
+
+.electronOne{
+    font-size: 20px;
+}
+.dron{
+ font-size: 20px;
+}
+}

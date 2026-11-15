@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электроника</title>
+     <link rel="icon" href="pictures/Logo-roundMin.ico">
+     <link rel="stylesheet" href="Hat.css">
+     <link rel="stylesheet" href="Tail.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.7/dist/purify.min.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Playfair Display&display=swap" rel="stylesheet">
+    <style>
+       main {
+            margin-top: 120px; /* Отступ сверху, чтобы контент не прятался за шапкой */
+            padding: 20px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+.loader{
+            width: 100%;
+            background: #fff;
+            color: black;
+            text-align: center;
+            font-size: 18px;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 100%;
+}
+.child {
+  width: 30%;
+}
+.blok{
+  border-radius: 5%;
+  height: 600px;
+  background-size: cover;        /* растягивает картинку, сохраняя пропорции, заполняя весь блок */
+  background-position: center;   /* центрирует картинку */
+  background-repeat: no-repeat;
+  color: #070707;
+  background: #fff;
+  
+}
+
+.blok:hover
+{
+   transform: scale(1.1);}
+   
+   /* Контейнер статей */
+#articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;            /* расстояние между карточками */
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+/* Каждая ссылка-карточка — занимает ровно 1/4 ряда с учётом gap */
+.article-link {
+  flex: 0 0 calc(25% - 20px);  /* 25% минус gap */
+  text-decoration: none;       /* убираем подчёркивание */
+  color: black;                /* цвет текста */
+  background-color: white;     /* белый фон */
+  border-radius: 10px;
+  overflow: hidden;            /* чтобы картинка не вылезала за скругление */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.article-link:hover {
+  transform: scale(1.02);
+}
+
+/* Внутренний блок с контентом */
+.article {
+  height: 300px;              /* фиксированная высота, можно менять */
+  padding: 20px;
+  background-color: white;    /* подложка, если картинки нет */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;  /* текст прижимаем вниз */
+  align-items: flex-start;
+  color: black;
+  position: relative;
+}
+
+/* Затемнение для читаемости текста поверх картинки */
+.article::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.7); /* полупрозрачный белый слой */
+  z-index: 1;
+}
+
+.article h2,
+.article small {
+  position: relative;
+  z-index: 2;             /* текст поверх затемнения */
+  margin: 5px 0;
+}
+
+.article h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.article small {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+     </style>
+</head>
+<body>
+      <!-- Шапка -->
+     <header>
+    <a href="index.html">
+        <img src="pictures/Logo-round.png" alt="Лаба" class="imgLaba">
+    </a>
+    <div class="TestLaba">
+        Инженерная школа<br>
+        беспилотной авиации<br>
+        программирования и электроники "ЛАБА"
+    </div>
+
+    <!-- Кнопка-бургер -->
+    <button class="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Меню -->
+    <div class="sizeText">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">О нас</a></li>
+                <li class="has-dropdown">
+                    <a href="#">База знаний ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="Bpla.html">Пилотирование</a></li>
+                        <li><a href="Robot.html">Программирование</a></li>
+                        <li><a href="Electron.html">Электроника</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://max.ru/join/vAo-XkHvIgzdgK2B6dDbFFQt7N3c71m3QjHsvYk63fo">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <br> 
+        <main>
+
+          <div id="articles-container" class="parent">
+            <div class="loader child blok">Загрузка статей...</div>
+          </div>
+          <!-- Низ -->
+        </main>
+           <!-- Низ -->
+      <hr>
+    <div class="parentTail">
+        <div>
+            <img  class="imgloga" src="pictures/Logo-round.png" alt="Logo"> 
+        </div>
+        <div class="childTail">
+           <p class="Tailp">
+               Инженерная школа беспилотной авиации,<br>
+               программирования и электроники "ЛАБА"   
+           </p>
+        </div>
+        <div class="childTail ">
+            <p class="testContactTail">Контакты:</p>
+            <p class="AddressTail">📍 Адрес: г.Барнаул, пр-т Сибирский, 43г</p> <br>  
+            <a href="https://max.ru/join/vAo-XkHvIgzdgK2B6dDbFFQt7N3c71m3QjHsvYk63fo">
+                <img  class="imgTail" src="pictures/max.png" alt="макс">
+            </a>
+        </div>
+         <div class="childTail">
+            <p class="testContactTail">База знаний:</p>
+              <a href="Bpla.html" class="aBaza">
+                  <p>Пилотирование</p>
+                </a>
+                <a href="Robot.html" class="aBaza"><p>Программирование</p></a>
+                <a href="Electron.html" class="aBaza">
+                    <p>Электроника</p>
+                </a>
+        </div>
+    </div>
+    <h3 class="Knowledge"> «Знание — это сокровищница, но ключ к ней — воображение»</h3>
+    <h5 class="year"> <li>
+                                <a href="Authorization.html" style="color: cadetblue;">2026г</a></h5>
+    
+    <!-- БуРГЕР меню                              -->
+    <script>
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.sizeText');
+
+    // Открыть/закрыть бургер-меню
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('open');
+    });
+
+    // Выпадающее подменю "База знаний"
+    document.querySelectorAll('.has-dropdown > a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                link.parentElement.classList.toggle('open');
+            }
+        });
+    });
+
+    // Закрыть меню при клике вне
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !burger.contains(e.target)) {
+            burger.classList.remove('active');
+            menu.classList.remove('open');
+        }
+    });
+    // Закрывать меню при клике на пункты "О нас" и "Контакты"
+document.querySelectorAll('.sizeText nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Не закрываем, если это ссылка подменю "База знаний" (родитель)
+        if (link.parentElement.classList.contains('has-dropdown')) return;
+
+        burger.classList.remove('active');
+        menu.classList.remove('open');
+    });
+});
+</script>                 
+         <script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+   // Ждём загрузки DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('articles-container');
+
+            // Функция загрузки статей с сервера
+            function loadArticles() {
+                container.innerHTML = '<div class="loader">Загрузка...</div>';
+
+
+                fetch('/api/articles?topic=Electron')
+                    .then(response => {
+                        if (!response.ok) throw new Error('Ошибка сети');
+                        return response.json();
+                    })
+                    .then(articles => {
+                        if (articles.length === 0) {
+                            container.innerHTML = '<p>Статей пока нет.</p>';
+                            return;
+                        }
+                         //     // Рендерим каждую статью
+                    //     let html = '';
+                    //     articles.forEach(art => {
+                    //         html += `
+                    //         <a href="/article?id=${art.id}" target="_blank" class="article-link">
+                    //             <div class="article">
+                    //                 <h2>${escapeHTML(art.title)}</h2>
+                    //                 ${art.image_url ? `<img src="${escapeHTML(art.image_url)}" alt="Изображение">` : ''}
+                    //                 <small>Опубликовано: ${new Date(art.created_at).toLocaleString()}</small>
+                    //             </div>
+                    //             </a>
+                    //         `;
+                    //     });
+                    //     container.innerHTML = html;
+                    // })
+                      renderArticlesList(articles);
+        })
+                    .catch(err => {
+                        container.innerHTML = `<p class="error">❌ Ошибка загрузки: ${err.message}</p>`;
+                    });
+            }
+
+     function renderArticlesList(articles) {
+  let html = '';
+  articles.forEach(art => {
+    // Экранируем данные
+    const title = escapeHTML(art.title);
+    const date = new Date(art.created_at).toLocaleString();
+    const imageUrl = art.image_url ? escapeHTML(art.image_url) : '';
+
+    // Стиль для фоновой картинки (если есть)
+    const bgStyle = imageUrl ? `background-image: url('${imageUrl}');` : '';
+
+    html += `
+      <a href="#" class="article-link" data-id="${art.id}">
+        <div class="article" style="${bgStyle} background-size: cover; background-position: center;">
+          <h2>${title}</h2>
+          <small>Опубликовано: ${date}</small>
+        </div>
+      </a>
+    `;
+  });
+  container.innerHTML = html;
+
+      // Навешиваем обработчик на все ссылки с классом .article-link
+      document.querySelectorAll('.article-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault(); // отменяем переход по ссылке
+          const id = this.dataset.id; // берём id из data-атрибута
+          loadArticle(id);
+        });
+      });
+    }
+
+    // Функция загрузки и отображения одной статьи
+    function loadArticle(id) {
+      container.innerHTML = '<div class="blok">Загрузка статьи...</div>';
+
+      fetch(`/api/article/${id}`)
+        .then(response => {
+          if (!response.ok) throw new Error('Ошибка загрузки статьи');
+          return response.json();
+        })
+        .then(article => {
+          // Рендерим статью в том же контейнере
+          const title = escapeHTML(article.title);
+          const content = DOMPurify.sanitize(article.content);
+          const image = article.image_url ? escapeHTML(article.image_url) : '';
+          const video = article.video_url ? escapeHTML(article.video_url) : '';
+          const date = new Date(article.created_at).toLocaleString();
+
+          container.innerHTML = `
+            <div style="background:#fff;border-radius: 1%;margin 10px;padding:20px">
+              <button id="back-to-list" style="background:cadetblue;border-radius: 0.5%;">← Назад к списку</button>
+              <h1>${title}</h1>
+              ${content}
+              ${video ? `<video controls src="${video}" style="max-width:100%;"></video>` : ''}
+              <p><small>${date}</small></p>
+            </div>
+          `;
+
+          // Добавляем обработчик кнопки "Назад"
+          document.getElementById('back-to-list').addEventListener('click', function() {
+            loadArticles(); // возвращаем список
+          });
+        })
+        .catch(err => {
+          container.innerHTML = `<p class="error">❌ Ошибка загрузки статьи: ${err.message}</p>`;
+        });
+    }
+
+    // Экранирование HTML
+    function escapeHTML(str) {
+      if (!str) return '';
+      return str.replace(/[&<>"]/g, function(m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        if (m === '"') return '&quot;';
+        return m;
+      });
+    }
+
+    // Инициализация – загружаем список статей при открытии страницы
+    loadArticles();
+  });
+</script>
+</body>
+</html>

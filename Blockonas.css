@@ -1,0 +1,77 @@
+
+/*Видео */
+/* Обычный блок, не фон */
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-block {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+    background: #000;
+}
+.video_media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;             /* Заполняет блок */
+    object-position: 50% 10%;      /* Смещает видимую область вверх (30% от верха) */
+      left: 0;
+      background: url('pictures/Fon.png') no-repeat center / cover; /* ← Превью */
+}
+.record{
+ color: #fff;
+ background: cadetblue;
+ border-radius: 10px;
+margin-top: 10px;
+ font-family: 'Playfair Display', sans-serif;
+   opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.5s;
+    padding: 12px 30px;        /* Внутренние отступы */
+  display: inline-block;     /* Чтобы padding работал правильно */
+  text-decoration: none;     /* Убираем подчёркивание */
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 0; 
+}
+.record:hover{
+   transform: scale(1.1) !important;
+   box-shadow: 0 0 15px 5px #ffffff;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1440px) {
+ .video-block{
+   height: 750px;
+ }
+}
+@media (max-width: 1024px) {
+ .video_media{
+        width: auto;               /* вместо width: 100% */
+        object-position: 50% 10%;  /* вместо -60px */
+ }
+}
+@media (max-width: 426px) {
+ .video-block{
+   height: 500px;
+ }
+}
+@media (max-width: 321px) {
+ .record{
+  font-size: 25px;
+}
+}
+

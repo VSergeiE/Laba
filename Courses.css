@@ -1,0 +1,207 @@
+
+
+
+
+/* ===== ТОЧКИ-ТАБЫ ===== */
+.dots {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  margin: 10px auto 0 10px;
+  
+}
+
+.dot {
+  flex: 1;
+  max-width: 620px;
+  height: 54px;
+  border-radius: 12px 12px 0 0;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 12px;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin: 0;
+}
+
+.dot:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.dot.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transform: translateY(-3px);
+  margin-bottom: 0;
+}
+.dot[data-index="0"].active {
+  border-bottom: 3px solid #00b894;
+    margin-bottom: 0;
+}
+.dot[data-index="1"].active {
+  border-bottom: 3px solid #fdcb6e;
+}
+.dot[data-index="2"].active {
+  border-bottom: 3px solid #6c5ce7;
+}
+.dot[data-index="3"].active{
+  border-bottom: 3px solid #f03a49;
+}
+
+/* ===== ВСЕ СЛАЙДЫ СКРЫТЫ ПО УМОЛЧАНИЮ ===== */
+.slide {
+  display: none !important;
+  padding: 20px 0;
+  animation: fadeSlide 0.4s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ===== ТОЛЬКО АКТИВНЫЙ СЛАЙД ВИДЕН ===== */
+.slide.active {
+  display: block !important;
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== ОБЩИЙ СТИЛЬ ДЛЯ ВСЕХ СЛАЙДОВ ===== */
+.bpla,
+.program,
+.electron,.subscription {
+  min-height: 280px;
+  padding: 30px 40px;
+  border-radius: 0 20px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ===== ФОНЫ СЛАЙДОВ ===== */
+.bpla {
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.15));
+  border-bottom: 4px solid #00b894;
+}
+
+.program {
+   background: linear-gradient(135deg,rgba(255, 255, 255, 0.15));
+  border-bottom: 4px solid #fdcb6e;
+}
+
+.electron {
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.15));
+  border-bottom: 4px solid #6c5ce7;
+}
+
+.subscription{
+  background: linear-gradient(135deg,rgba(255, 255, 255, 0.15));
+  border-bottom: 4px solid #f03a49;
+}
+
+/* ===== КОНТЕНТ ВНУТРИ СЛАЙДА ===== */
+.basic {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+.basicchild {
+  flex: 1;
+}
+.coureses{
+  border-radius: 40px;
+  background: linear-gradient(90deg, transparent, rgba(250, 204, 1, 0.2), transparent);
+  text-align: center;
+}
+
+.basicchild h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 55px;
+  color: #fff;
+  margin: 0 0 15px 0;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.basicchild h2 {
+  font-size: 35px;
+  color: #fff;
+  margin: 10px 0;
+  font-weight: 400;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Специальные стили */
+.basicchildDate {
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  color: #000!important;
+  border-bottom: none !important;
+}
+
+.basicchildOne,
+.basicchildTwo,
+.basicchildThree {
+  font-size: 25px !important;
+  font-weight: 700 !important;
+  color: #000!important;
+  border-bottom: none !important;
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+.dot {
+  flex: none;
+  height: auto;
+  font-size: 20px;
+}
+.basicchild h1 {
+  font-size: 30px;
+}
+
+.basicchild h2 {
+  font-size: 25px;
+}
+}
+@media (max-width: 426px) {
+.dot {
+  font-size: 13px;
+}
+.basic {
+  display: flow;
+}
+}
+@media (max-width: 376px) {
+.dot {
+  font-size: 11px;
+}
+}
+@media (max-width: 321px) {
+.dot {
+  font-size: 8px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+       

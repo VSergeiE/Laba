@@ -1,0 +1,99 @@
+.imgloga {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.imgTail{
+   width: 30px;
+   height: 30px;
+}
+.parentTail {
+  display: flex;
+  height: 100%;
+  padding: 20px;
+  justify-content: center;
+  margin-left: 20%;
+}
+.childTail {
+  width: 100%;
+}
+.aBaza{
+  font-size: 12px;
+  color: cadetblue;
+  
+}
+.aBaza:hover{
+ color: black;
+ transition: .5s;
+ font-size: 15px;
+}
+.Tailp{
+   font-size: 15px; 
+   padding: 10px;
+    color: #fff; 
+    font-family: 'Playfair Display', sans-serif; 
+}
+.testContactTail{
+  font-size: 15px;
+  margin-bottom: 0px; 
+  padding: 10px; 
+  color: #fff;
+  font-family: 'Playfair Display', sans-serif;
+}
+.AddressTail{
+  color: #fff;
+  margin: 0; 
+  font-size: 13px;
+}
+.Knowledge{
+  color: cadetblue; 
+  text-align: center;
+}
+.year{
+  color: cadetblue; 
+  text-align: center;
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+ .parentTail {
+  padding: 0;
+  margin-left: 10%;
+}
+.imgloga {
+    width: 70px;
+    height: 70px;
+    padding-top: 30px;
+}
+.Tailp{
+   font-size: 10px; 
+   padding-top: 35px;
+}
+}
+@media (max-width: 426px) {
+ .parentTail {
+  margin-left: 0;
+}
+.imgloga {
+    width: 50px;
+    height: 50px;
+}
+.Tailp{
+   font-size: 8px; 
+   padding-top: 25px;
+}
+.testContactTail{
+  font-size: 13px;
+  padding: 0;
+}
+.AddressTail{
+  margin-right: 13px; 
+  font-size: 12px;
+}
+.Knowledge{
+font-size: 12px;
+margin-bottom: 0;
+}
+.year{
+  font-size: 12px;
+}
+}

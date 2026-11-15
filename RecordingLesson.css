@@ -1,0 +1,126 @@
+/* ===== КОНТЕЙНЕР ФОРМЫ ===== */
+.headerAvto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 480px;
+  margin: 0 auto;
+  padding: 40px 45px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Декоративный уголок */
+.headerAvto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0.6;
+}
+
+/* ===== ЗАГОЛОВКИ ===== */
+h1[style*="color: #fff"] {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 0;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+h1[style*="color: #fff"] + h3 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+/* ===== ПОЛЯ ===== */
+.Name,
+.Telephone {
+  width: 100%;
+}
+
+.Name h3,
+.Telephone h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  letter-spacing: 0.5px;
+}
+
+.Name input,
+.Telephone input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: #fff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.Name input:focus,
+.Telephone input:focus {
+  outline: none;
+  border-color: #fdcb6e;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 3px rgba(253, 203, 110, 0.08);
+}
+
+/* ===== КНОПКА ===== */
+.Button {
+  width: 100%;
+  margin-top: 5px;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+#submitBtn {
+  width: 100%;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  background: #fdcb6e;
+  color: #1a1a2e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+#submitBtn:hover {
+  background: #f39c12;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(253, 203, 110, 0.25);
+}
+
+/* ===== АДАПТИВ ===== */
+@media (max-width: 768px) {
+  h1[style*="color: #fff"] { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+  .headerAvto { padding: 25px 18px; }
+  h1[style*="color: #fff"] { font-size: 22px; }
+  .Name input, .Telephone input { padding: 10px 14px; font-size: 14px; }
+  #enter { padding: 12px; font-size: 15px; }
+}
+@media (max-width: 426px) {
+  .headerAvto { width:380px ; }
+}
+@media (max-width: 426px) {
+  .headerAvto { width:280px ; }
+}

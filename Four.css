@@ -1,0 +1,91 @@
+.parentfour {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Вертикальная линия */
+.parentfour::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 40px;
+  bottom: 40px;
+  width: 2px;
+  background: linear-gradient(180deg, #00b894, #fdcb6e, #6c5ce7, #fd79a8, #0984e3);
+  opacity: 0.3;
+}
+
+.childfour {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px 20px 20px 0;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Точка на линии */
+.childfour::before {
+  content: "";
+  position: absolute;
+  left: 41px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #2d3436;
+  border: 3px solid #00b894;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.childfour:nth-child(2)::before { border-color: #fdcb6e; }
+.childfour:nth-child(3)::before { border-color: #6c5ce7; }
+.childfour:nth-child(4)::before { border-color: #fd79a8; }
+.childfour:nth-child(5)::before { border-color: #0984e3; }
+
+.Number {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Playfair Display', sans-serif;
+  color: rgba(255, 255, 255, 0.3);
+  min-width: 40px;
+  text-align: right;
+  padding-top: 4px;
+}
+
+.childfour h2 {
+  font-size: 35px;
+  font-family: 'Playfair Display', sans-serif;
+  color: #fff;
+  margin: 0 0 5px 0;
+}
+
+.childfour h3 {
+  font-size: 30px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0;
+  line-height: 1.5;
+}
+/* ===== АДАПТИВ ===== */
+@media (max-width: 1024px) {
+ .childfour h2 {
+  font-size: 30px;
+}
+.childfour h3 {
+  font-size: 20px;
+}
+}
+@media (max-width: 426px) {
+ .childfour h2 {
+  font-size: 20px;
+}
+.childfour h3 {
+  font-size: 15px;
+}
+}

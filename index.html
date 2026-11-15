@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инженерная школа "Лаба"</title>
+     <link rel="icon" href="pictures/Logo-roundMin.ico">
+     <link rel="stylesheet" href="Hat.css">
+     <link rel="stylesheet" href="OneBlok.css">
+     <link rel="stylesheet" href="Blockonas.css">
+     <link rel="stylesheet" href="Four.css">
+     <link rel="stylesheet" href="Tail.css">
+     <link rel="stylesheet" href="Address.css">
+     <link rel="stylesheet" href="Courses.css">
+     <link rel="stylesheet" href="RecordingLesson.css">
+     <link href="https://fonts.googleapis.com/css?family=Playfair Display&display=swap" rel="stylesheet">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <meta name="description" content="Инженерная школа беспилотной авиации программирования и электроники ЛАБА"/>
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Инженерная школа "Лаба",
+  "url": "https://www.labaclub.ru",
+  "logo": "https://www.labaclub.ru/pictures/Logo-round.png"
+}
+</script>
+</head>
+<body>
+    <!-- Шапка -->
+     <header>
+    <a href="index.html">
+        <img src="pictures/Logo-round.png" alt="Лаба" class="imgLaba">
+    </a>
+    <div class="TestLaba">
+        Инженерная школа<br>
+        беспилотной авиации<br>
+        программирования и электроники "ЛАБА"
+    </div>
+
+    <!-- Кнопка-бургер -->
+    <button class="burger" aria-label="Меню">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Меню -->
+    <div class="sizeText">
+        <nav>
+            <ul class="menu">
+                <li><a href="#О нас">О нас</a></li>
+                <li class="has-dropdown">
+                    <a href="#">База знаний ▼</a>
+                    <ul class="dropdown">
+                        <li><a href="Bpla.html">Пилотирование</a></li>
+                        <li><a href="Robot.html">Программирование</a></li>
+                        <li><a href="Electron.html">Электроника</a></li>
+                    </ul>
+                </li>
+                <li><a href="#Контакты">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <!-- О нас -->
+        <!-- Кнопки управления -->
+         <div class="video-block">
+             <video class="video_media" src="video/video.One.mp4" autoplay muted loop></video>
+             <!-- Затемнение -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 1;"></div>
+  
+  <!-- Текст -->
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff; text-align: center; z-index: 2; width: 80%;">
+    <h1 style="font-size: 55px; text-shadow: 0 4px 30px cadetblue; color: #fff;">
+      Пробное занятие бесплатно <br><a href="#Запись"  class="record">ЗАПИСАТЬСЯ</a>
+    </h1>
+  </div>
+            </div>
+    <br>
+    <!-- Курсы  -->
+       <div class="oneblok">
+                <h1 style="color: #fff;">Курсы </h1>   
+           <div class="parent">
+               <a href="#Базовый" class=" child child-link">
+                     <div class="blok">
+                <h3 class="dron">Базовый</h3>
+                <img src="pictures/basic.jpg" class="kartaimg">
+                     </div>
+                </a>
+                <a href="#Стандартный" class="child child-link">
+                     <div class="blok">
+                <h3 class="robot">Стандартный</h3>
+                <img src="pictures/Standard.jpg" class="kartaimg">
+                     </div>
+                    </a>
+                    <a name="О нас"></a>
+                    <a href="#Продвинутый" class="child child-link">
+                        <div class="blok">
+                            <h3 class="electronOne">Продвинутый</h3>
+                            <img src="pictures/Advanced.jpg" class="kartaimg">
+                        </div>
+                    </a>                
+                </div> 
+            </div>
+            <!-- Адрес о нас -->
+            <div id="О нас" style="scroll-margin-top: 100px;">
+            <h1 style="color: #fff;margin-left: 2%;">Наши Классы</h1>
+            </div>
+            <div>
+            <div class="auto-carousel">
+            <div class="divkaloda">
+                  <div class="karta">
+                      <img src="pictures/KompOne.jpg" class="kartaimg">
+                      <h3 class="sizeh3">Класс для программирования</h3>
+                  </div>
+                     <div class="karta">
+                         <img src="pictures/KompTwo.jpg" class="kartaimg">
+                         <h3 class="sizeh3">Класс</h3>
+                      </div>
+                         <div class="karta">
+                             <img src="pictures/KompDron.jpg" class="kartaimg">
+                             <h3 class="sizeh3">Класс для БПЛА</h3>
+                          </div>
+                             <div class="karta">
+                                 <img src="pictures/KompOneDron.jpg" class="kartaimg">
+                                 <h3 class="sizeh3">Класс для теории БПЛА</h3>
+                              </div>
+                             <div class="karta">
+                      <img src="pictures/KompOne.jpg" class="kartaimg">
+                      <h3 class="sizeh3">Класс для программирования</h3>
+                  </div>
+                                <div class="karta">
+                         <img src="pictures/KompTwo.jpg" class="kartaimg">
+                         <h3 class="sizeh3">Класс</h3>
+                      </div>
+                                      <div class="karta">
+                             <img src="pictures/KompDron.jpg" class="kartaimg">
+                             <h3 class="sizeh3">Класс для БПЛА</h3>
+                          </div>
+                                       <div class="karta">
+                                 <img src="pictures/KompOneDron.jpg" class="kartaimg">
+                                 <h3 class="sizeh3">Класс для теории БПЛА</h3>
+                              </div>
+                               <div class="karta">
+                      <img src="pictures/KompOne.jpg" class="kartaimg">
+                      <h3 class="sizeh3">Класс для программирования</h3>
+                  </div>
+                     <div class="karta">
+                         <img src="pictures/KompTwo.jpg" class="kartaimg">
+                         <h3 class="sizeh3">Класс</h3>
+                      </div>
+                         <div class="karta">
+                             <img src="pictures/KompDron.jpg" class="kartaimg">
+                             <h3 class="sizeh3">Класс для БПЛА</h3>
+                          </div>
+                             <div class="karta">
+                                 <img src="pictures/KompOneDron.jpg" class="kartaimg">
+                                 <h3 class="sizeh3">Класс для теории БПЛА</h3>
+                              </div>
+            </div>
+            </div>
+            </div>
+        <!-- Four -->
+        <h1 style="color: #fff;  text-align: center;">5 фактов, которые убедят вас записать ребёнка в 
+            <br> инженерную школу "ЛАБА"</h1>
+        <div class="parentfour" >
+            <div class="childfour" data-aos="fade-up" data-aos-duration="3000">
+                <div class="Number"> 
+                </div>
+                <div style="margin-left: 20px; margin-bottom: 20px;    border-bottom: 3px solid #00b894;">
+                     <h2>Развивает STEM-навыки лучше многих школьных предметов</h2>
+                    <h3>Ребёнок 
+                        на практике осваивает физику полёта, основы электроники, программирование и работу с частотами — причём 
+                        не по учебнику, а через живой интерес к результату. Дети, которые сами настраивают дрон,
+                        лучше понимают, как работает техника вокруг них.</h3>
+                </div>
+            </div>
+            <div class="childfour" data-aos="fade-up" data-aos-duration="3000">
+                 <div class="Number">
+                    
+                </div>
+                 <div style="margin-left: 20px;margin-bottom: 20px;    border-bottom: 3px solid #fdcb6e">
+                    <h2>Тренирует реакцию, концентрацию и стрессоустойчивость</h2>
+                    <h3>Управление гоночным дроном на скорости требует мгновенных решений и полной сосредоточенности. 
+                        Это отличная тренировка тех же когнитивных навыков, 
+                        что нужны в учёбе и спорте — только в увлекательном формате, от которого ребёнка не нужно уговаривать.</h3>
+                </div>
+            </div>
+            <div class="childfour" data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="Number">
+                    
+                </div>
+                <div style="margin-left: 20px;margin-bottom: 20px;    border-bottom: 3px solid #6c5ce7;">
+                       <h2>Безопасная альтернатива экранному времени </h2>
+                       <h3>В отличие от пассивного просмотра видео или бесцельного скроллинга,
+                         дрон-рейсинг — это активное, вовлечённое хобби с реальным результатом: собранный аппарат,
+                         освоенный трюк, выигранная гонка.</h3>
+                   </div>
+            </div>
+            <div class="childfour" data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="Number">
+                    
+                </div>
+                 <div style="margin-left: 20px;margin-bottom: 20px;    border-bottom: 3px solid #fd79a8;">
+                    <h2>Формирует навыки инженерного мышления и работы руками </h2>
+                    <h3>Дети учатся не только летать, но и ремонтировать, настраивать,
+                     улучшать свои дроны — это редкий сегодня навык самостоятельного решения технических задач 
+                     методом проб и ошибок.</h3>
+                </div>
+            </div>
+            <div class="childfour" data-aos="fade-up"
+     data-aos-duration="3000">
+                <div class="Number">
+                    
+                </div>
+                 <div style="margin-left: 20px;margin-bottom: 20px;    border-bottom: 3px solid #0984e3;">
+                    <h2>Растущая профессиональная перспектива </h2>
+                    <h3>Индустрия БПЛА стремительно развивается — от логистики до кино и сельского хозяйства. 
+                        Ранний интерес и практический опыт могут стать серьёзным преимуществом при выборе будущей профессии.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Курсы -->
+ <div class="dots">
+    <span class="dot" data-index="0" >Базовый</span>
+    <span class="dot active" data-index="1">Стандартный</span>
+    <span class="dot" data-index="2">Продвинутый</span>
+    <span class="dot" data-index="3">Абонемент</span>
+  </div>
+  
+  <!-- Слайдер -->
+  <div class="slider">
+    
+    <!-- Слайд 1 - Базовый (активен по умолчанию) -->
+    <div class="slide bpla">
+      <div class="basic">
+        <div class="basicchild">
+          <h1>Базовый</h1>
+          <h2>1.Обучение на симуляторе</h2>
+          <h2>2.Теория управления дроном</h2>
+          <h2>3.Теория состава дрона</h2>
+        </div>
+        <div class="basicchild coureses" data-aos="zoom-out-left" style="margin-top: 10%;">
+          <h2 class="basicchildDate">8 занятий / 2 месяца</h2>
+          <h2 class="basicchildOne"> Цена за месяц: 2000 рублей</h2>
+          <h2 class="basicchildOne">Общая цена за курс: 4000 рублей</h2>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Слайд 2 - Стандартный (скрыт) -->
+    <div class="slide active program">
+      <div class="basic">
+        <div class="basicchild">
+            <h1>Стандартный</h1>
+            <h2>1.Обучение на симуляторе</h2>
+            <h2>2.Теория управления дроном</h2>
+            <h2>3.Теория состава дрона</h2>
+            <h2>4.Практика на реальном дроне</h2>
+        </div>
+        <div class="basicchild coureses"style="margin-top: 14%;">
+            <h2 class="basicchildDate">12 занятий / 3 месяца</h2>
+            <h2 class="basicchildOne"> Цена за месяц: 2200 рублей</h2>
+            <h2 class="basicchildTwo">Общая цена за курс: 6600 рублей</h2>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Слайд 3 - Продвинутый (скрыт) -->
+    <div class="slide electron">
+      <div class="basic">
+        <div class="basicchild">
+          <h1>Продвинутый</h1>
+          <h2>1.Обучение на симуляторе</h2>
+          <h2>2.Теория управления дроном</h2>
+          <h2>3.Теория состава дрона</h2>
+          <h2>4.Практика на реальном дроне</h2>
+          <h2>5.Самостоятельная сборка дрона</h2>
+        </div>
+        <div class="basicchild coureses" style="margin-top: 18%;" >
+          <h2 class="basicchildDate">14 занятий / 4 месяца</h2>
+          <h2 class="basicchildOne"> Цена за месяц: 4625 рублей</h2>
+          <h2 class="basicchildThree">Общая цена за курс: 18500 рублей</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Слайд 4 - Абонемент -->
+    <div class="slide  subscription">
+      <div class="basic">
+        <div class="basicchild">
+          <h1>Абонемент для дрон рейсинга</h1>
+          <h2>На своем дроне 1500 рублей (4 занятия)</h2>
+          <h2>На арендованном дроне 2500 рублей (4 занятия)</h2>
+        </div>
+      </div>
+    </div>
+  </div><!-- /slider -->
+</div><!-- /divimg -->
+
+
+
+<div style="background-color: rgba(0, 0, 0, 0.4);    width: 100%;padding-bottom: 20px;scroll-margin-top: 120px;" id="Запись">
+   <br> <h1 style="color: #fff;">
+        Записаться на пробный урок
+    </h1> 
+    <h3>Заполните форму, и мы свяжемся с вами для подтверждения</h3>
+    <form id="myForm">
+            <div class="headerAvto">
+            <div class="Name">
+                <h3>Ваше имя:</h3>
+                <input 
+                type="text" 
+                id="name" 
+                name="name"
+                placeholder="Иван" 
+                autocomplete="given-name"
+                required>
+            </div>
+            <div class="Telephone">
+                <h3>Номер телефона:</h3>
+                <input 
+                type="tel" 
+                id="phone" 
+                name="phone"
+                placeholder="+7 999 123-45-67" 
+                autocomplete="tel"
+                required>
+            </div>
+            
+            <button class="Button" type="submit" id="submitBtn">Отправить заявку</button>
+            <div style="color: #fff;" id="message"></div>
+        </div>
+        </form>
+        
+    </div>
+    <br>
+</div>
+    
+<br>
+<div class="divKarta" id="Контакты"  >
+    <div class="kartaApi">
+<div style="position:relative;overflow:hidden;width:100%;height:500px;margin:0 auto;">
+    <a href="https://yandex.ru/maps/197/barnaul/house/prospekt_sibirskiy_43g/Z0AYdgBmT0AFQFtvfXh2dXliZw==/?utm_medium=mapframe&utm_source=maps" 
+       style="color:#eee;font-size:12px;position:absolute;top:0px;">пр-т Сибирский, 43г, Барнаул</a>
+    <a href="https://yandex.ru/maps/197/barnaul/?utm_medium=mapframe&utm_source=maps" 
+       style="color:#eee;font-size:12px;position:absolute;top:14px;">Барнаул</a>
+    
+   <iframe src="https://yandex.ru/map-widget/v1/?ll=83.781932%2C53.355487&z=18&l=map&pt=83.781932%2C53.355487~pm2rdm
+   ~%D0%A1%D0%B8%D0%B1%D0%B8%D1%80%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6"
+        width="100%"
+        height="100%"
+        frameborder="1"
+        allowfullscreen="true"
+        style="position:relative;">
+</iframe>
+</div>
+</div>
+<div class="Contacts">
+<h1 style="color: #fff; font-family: 'Playfair Display', sans-serif;">Контакты</h1>
+<h3> </h3>
+<h3> Адрес </h3>
+<h4> г.Барнаул, пр-т Сибирский, 43г</h4>
+<h3> Время работы </h3>
+<h4> Сб: 10:00-15:00</h4>
+<h3> Свяжитесь с нами</h3>
+<a name="Базовый"></a>
+<h4> +79130835004</h4>
+</div>
+</div>
+<br>
+<div>
+    <review-lab data-widgetid="6af5435e28d28dfac6d37086">
+  <a href="https://reviewlab.ru/?utm_source=reviewlab-widget" target="_blank">Сделано на ReviewLab</a>
+</review-lab>
+<script src="https://app.reviewlab.ru/widget/index-es2015.js" defer></script>
+</div>
+      <!-- Низ -->
+      <hr>
+    <div class="parentTail">
+        <div>
+            <img  class="imgloga" src="pictures/Logo-round.png" alt="Logo"> 
+        </div>
+        <div class="childTail">
+           <p class="Tailp">
+               Инженерная школа беспилотной авиации,<br>
+               программирования и электроники "ЛАБА"   
+           </p>
+        </div>
+        <div class="childTail ">
+            <p class="testContactTail">Контакты:</p>
+            <p class="AddressTail">📍 Адрес: г.Барнаул, пр-т Сибирский, 43г</p> <br>  
+            <a href="https://max.ru/join/vAo-XkHvIgzdgK2B6dDbFFQt7N3c71m3QjHsvYk63fo">
+                <img  class="imgTail" src="pictures/max.png" alt="макс">
+            </a>
+        </div>
+         <div class="childTail">
+            <p class="testContactTail">База знаний:</p>
+              <a href="Bpla.html" class="aBaza">
+                  <p>Пилотирование</p>
+                </a>
+                <a href="Robot.html" class="aBaza"><p>Программирование</p></a>
+                <a href="Electron.html" class="aBaza">
+                    <p>Электроника</p>
+                </a>
+        </div>
+    </div>
+    <h3 class="Knowledge"> «Знание — это сокровищница, но ключ к ней — воображение»</h3>
+    <h5 class="year"> <li>
+                                <a href="Authorization.html" style="color: cadetblue;">2026г</a></h5>
+    
+    <!-- БуРГЕР меню                              -->
+    <script>
+    const burger = document.querySelector('.burger');
+    const menu = document.querySelector('.sizeText');
+
+    // Открыть/закрыть бургер-меню
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('open');
+    });
+
+    // Выпадающее подменю "База знаний"
+    document.querySelectorAll('.has-dropdown > a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                link.parentElement.classList.toggle('open');
+            }
+        });
+    });
+
+    // Закрыть меню при клике вне
+    document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !burger.contains(e.target)) {
+            burger.classList.remove('active');
+            menu.classList.remove('open');
+        }
+    });
+    // Закрывать меню при клике на пункты "О нас" и "Контакты"
+document.querySelectorAll('.sizeText nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        // Не закрываем, если это ссылка подменю "База знаний" (родитель)
+        if (link.parentElement.classList.contains('has-dropdown')) return;
+
+        burger.classList.remove('active');
+        menu.classList.remove('open');
+    });
+});
+</script>                 
+    <!-- Проверка номера -->
+    <script>
+        $(document).ready(function() {
+            $('#phone').inputmask({
+                mask: '+7 (999) 999-99-99',
+                placeholder: '_',
+                showMaskOnHover: false,
+                showMaskOnFocus: true,
+                clearMaskOnLostFocus: true,
+                autoUnmask: true
+            });
+        });
+    </script>
+        <!-- Запись -->
+ <script>
+    // ⚠️ ВСТАВЬТЕ ВАШ URL СКРИПТА
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxIE_ajk5y6VFXaQPAgXTpXXNiBexXpfzXm-ise2xSiVhexdh9kMrPXjsAXDmYy66ng/exec';
+    
+    const form = document.getElementById('myForm');
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
+    const submitBtn = document.getElementById('submitBtn');
+    const messageDiv = document.getElementById('message');
+    
+    function showMessage(text, type) {
+        messageDiv.textContent = text;
+        messageDiv.className = type;
+    }
+    
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const name = nameInput.value.trim();
+        const phone = phoneInput.value.trim();
+        
+        if (!name || !phone) {
+            showMessage('❌ Заполните все поля!', 'error');
+            return;
+        }
+        
+        submitBtn.disabled = true;
+    
+            // ✅ ПРАВИЛЬНЫЙ ФОРМАТ ДАННЫХ ДЛЯ ВАШЕГО СКРИПТА
+            const requestData = {
+                customer: {
+                    data: name,
+                    phone: phone
+                }
+            };
+            const response = await fetch(SCRIPT_URL, {
+                method: 'POST',
+                 mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData)
+            });
+               
+                document.getElementById('name').value = '';
+                document.getElementById('phone').value = '';
+                showMessage('✅ Заявка успешно отправлена!', 'success');
+                form.reset();
+            
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Отправить заявку';
+        
+    });
+    </script>
+<script>
+  // ===== ОБЪЯВЛЯЕМ ВСЕ ПЕРЕМЕННЫЕ =====
+  const dots = document.querySelectorAll('.dot');
+  const slides = document.querySelectorAll('.slide');
+  const links = document.querySelectorAll('.child-link');
+
+  // ===== ФУНКЦИЯ ДЛЯ ПОКАЗА СЛАЙДА =====
+  function showSlide(index) {
+    // Скрываем все слайды
+    slides.forEach(s => s.classList.remove('active'));
+    // Показываем нужный
+    slides[index].classList.add('active');
+    
+    // Обновляем активные точки (если они есть)
+    if (dots.length) {
+      dots.forEach(d => d.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  }
+
+  // ===== 1. ОБРАБОТЧИК ДЛЯ ТОЧЕК (ТАБОВ) =====
+  if (dots.length) {
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', function() {
+        showSlide(index);
+      });
+    });
+  }
+
+  // ===== 2. ОБРАБОТЧИК ДЛЯ ССЫЛОК-КАРТОЧЕК =====
+  if (links.length) {
+    links.forEach((link, index) => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Получаем индекс: из data-slide или из порядка в списке
+        let slideIndex = index;
+        if (this.hasAttribute('data-slide')) {
+          slideIndex = parseInt(this.getAttribute('data-slide'));
+        }
+        
+        showSlide(slideIndex);
+        
+        // ===== ПРОКРУТКА С УЧЁТОМ ШАПКИ =====
+        const slider = document.querySelector('.slider');
+        if (slider) {
+          const header = document.querySelector('header');
+          const headerHeight = header ? header.offsetHeight : 80;
+          
+          const rect = slider.getBoundingClientRect();
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          const targetPosition = rect.top + scrollTop - headerHeight - 30;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   // Ждём загрузки DOM
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init();
+            const container = document.getElementById('articles-container');
+            const robot = document.getElementById('articles-robot');
+
+            // Функция загрузки статей с сервера
+           function loadRobot(){
+    robot.innerHTML = '<div class="loader">Загрузка...</div>';
+fetch('/api/articles?topic=Robot')
+        .then(response => {
+            if (!response.ok) throw new Error('Ошибка сети');
+            return response.json();
+        })
+        .then(articles => {
+            if (articles.length === 0) {
+                robot.innerHTML = '<p>Статей по этой теме пока нет.</p>';
+                return;
+            }
+
+            // 📌 Сортируем по дате создания (от новых к старым)
+            articles.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+            // Берём самую свежую (первую после сортировки)
+            const latest = articles[0];
+
+            // Рендерим только одну статью
+            let html = `
+                <div class="article">
+                    <h2>Тема:${escapeHTML(latest.title)}</h2>
+                    <small>Опубликовано: ${new Date(latest.created_at).toLocaleString()}</small>
+                </div>
+            `;
+            robot.innerHTML = html;
+        })
+        .catch(err => {
+            robot.innerHTML = `<p class="error">❌ Ошибка загрузки: ${err.message}</p>`;
+                    });
+            }
+
+            // Простая защита от XSS (экранирование HTML-символов)
+            function escapeHTML(str) {
+                if (!str) return '';
+                return str.replace(/[&<>"]/g, function(m) {
+                    if (m === '&') return '&amp;';
+                    if (m === '<') return '&lt;';
+                    if (m === '>') return '&gt;';
+                    if (m === '"') return '&quot;';
+                    return m;
+                });
+            }
+
+            // Загружаем статьи при открытии страницы
+                loadRobot();
+           
+               function loadArticles() {
+    container.innerHTML = '<div class="loader">Загрузка...</div>';
+
+    fetch('/api/articles?topic=Bpla')
+        .then(response => {
+            if (!response.ok) throw new Error('Ошибка сети');
+            return response.json();
+        })
+        .then(articles => {
+            if (articles.length === 0) {
+                container.innerHTML = '<p>Статей по этой теме пока нет.</p>';
+                return;
+            }
+
+            // 📌 Сортируем по дате создания (от новых к старым)
+            articles.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+            // Берём самую свежую (первую после сортировки)
+            const latest = articles[0];
+
+            // Рендерим только одну статью
+            let html = `
+                <div class="article">
+                    <h2>Тема: ${escapeHTML(latest.title)}</h2>
+                    <p>${escapeHTML(latest.content).replace(/\n/g, '<br>')}..</p>
+                    ${latest.image_url ? `<img src="${escapeHTML(latest.image_url)}" alt="Изображение">` : ''}
+                    ${latest.video_url ? `<video controls><source src="${escapeHTML(latest.video_url)}" type="video/mp4"></video>` : ''}
+                    <small>Опубликовано: ${new Date(latest.created_at).toLocaleString()}</small>
+                </div>
+            `;
+            container.innerHTML = html;
+        })
+        .catch(err => {
+            container.innerHTML = `<p class="error">❌ Ошибка загрузки: ${err.message}</p>`;
+                    });
+            }
+
+            // Простая защита от XSS (экранирование HTML-символов)
+            function escapeHTML(str) {
+                if (!str) return '';
+                return str.replace(/[&<>"]/g, function(m) {
+                    if (m === '&') return '&amp;';
+                    if (m === '<') return '&lt;';
+                    if (m === '>') return '&gt;';
+                    if (m === '"') return '&quot;';
+                    return m;
+                });
+            }
+
+            // Загружаем статьи при открытии страницы
+                loadArticles();});
+</script>
+</body>
+</html>

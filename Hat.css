@@ -1,0 +1,223 @@
+html,body{
+    background-color: #2C3E50;
+    padding-top: 100px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+     box-sizing: border-box
+}
+
+/* * {
+    outline: 1px solid red;
+} */
+
+
+a{
+    text-decoration: none;
+}
+.sizeText{
+    display: flex;
+    align-content: center;
+}
+ul{
+    padding-left: 0;
+}
+header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px cadetblue;
+    background: #fff;
+    z-index: 1000;  
+    top: 0;           /* прижимаем к верху */
+    width: 100%;
+    left: 0;
+}
+.TestLaba{
+    font-size: 20px;    
+    font-weight: bold;
+    font-family: 'Playfair Display', sans-serif;
+    margin-right:   20px;
+}  
+header .imgLaba{
+    transition: .5s;
+}
+header .imgLaba:hover{
+    transform: scale(1.2);
+} 
+.sizeText nav ul li {
+    list-style: none;
+    position: relative;
+    float: left;
+}
+.sizeText nav ul li a {
+    color: #000;
+    font-size: 25px;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: .5s;
+    text-decoration: none;
+    margin-right: 50px;
+    padding: 5px;
+}
+
+.sizeText nav ul li a:hover{
+     color: #fff;
+}
+
+.sizeText nav ul li a:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset:0;
+    background: #000;
+    border-radius: 20px;
+    transform: rotate(450deg) scale(0);
+    transition: .5s;
+}
+.sizeText nav ul li a:hover:before{
+    transform: rotate(0deg) scale(1);
+}
+
+.imgLaba{
+    width:80px;
+    height: auto;
+    margin-right: 20%;
+    border-radius: 50px; 
+    padding: 10px;
+}
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 450px;
+    background: #fff;
+    display: none;
+    border-radius: 20px;
+}
+nav ul li ul li {
+    width: 100%;
+    border: 1px;
+}
+nav ul li:hover > ul{
+    display: inline;
+}
+
+header nav ul li ul li a {
+    transition: none !important;
+    transform: none !important;
+}
+header nav ul li ul li a::before {
+    display: none !important;
+    content: none !important;
+}
+header nav ul li ul li a:hover{
+     background: #000;
+     border-radius: 20px;
+}
+/* Кнопка-бургер — по умолчанию скрыта (для десктопа) */
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1002;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #040404;       /* цвет полосок */
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Анимация в крестик при открытии */
+.burger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+.burger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* /Конец Шапки/ */
+/* ===== АДАПТИВ ===== */
+/* Мобильная версия */
+@media (max-width: 768px) {
+
+header{
+    justify-content: flex-start;
+ 
+}
+    .burger {
+        display: flex;      /* показываем бургер */
+        background-color: #ffffff;
+       margin-left: auto; 
+       margin-right: 20px;
+    }
+
+    .sizeText {
+        position: fixed;
+        top: 0;
+        right: -100%;       /* спрятано за экраном */
+        width: 70%;
+        max-width: 320px;
+        background: #fff;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 1;
+        overflow-y: auto;
+    }
+
+    .sizeText.open {
+        right: 0;           /* выезжает */
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    
+    .has-dropdown.open .dropdown {
+        display: block;
+    }
+      /* Отключаем hover-подменю — оно залипает на тач-устройствах */
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Подменю по умолчанию скрыто */
+    .dropdown {
+        display: none;
+        position: static;
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    /* Открывается только через класс .open */
+    .has-dropdown.open .dropdown {
+        display: block;
+    }
+}
+
+@media (max-width: 426px) {
+
+.imgLaba{
+    width:50px;
+}
+.TestLaba{
+    font-size: 10px;    
+} 
+}
